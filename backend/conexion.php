@@ -1,8 +1,8 @@
 <?php
 /* VARIABLES DE CONFIGURACIÓN */
-$server_db = "localhost";
-$usuario_db = "root";
-$password_db = "";
+$server_db = "dtb.database.windows.net";
+$usuario_db = "CloudSAcff10363";
+$password_db = "342461323_Yeiker";
 $base_db = "diariodb";
 
 /* CONEXIÓN A LA BASE DE DATOS */
