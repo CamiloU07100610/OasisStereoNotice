@@ -2,7 +2,7 @@
 /* VARIABLES DE CONFIGURACIÓN */
 $server_db = "dtb.database.windows.net";
 $usuario_db = "CloudSAcff10363";
-$password_db = "342461323_Yeiker";
+$password_db = "Yeiker342461323";
 $base_db = "diariodb";
 
 /* CONEXIÓN A LA BASE DE DATOS */
