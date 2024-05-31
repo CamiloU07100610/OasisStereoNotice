@@ -1,11 +1,16 @@
-
 <?php
-// PHP Data Objects(PDO) Sample Code:
+/* VARIABLES DE CONFIGURACIÓN */
+$server_db = "dtb.database.windows.net";
+$usuario_db = "CloudSAcff10363";
+$password_db = "Yeiker342461323";
+$base_db = "diariodb";
+
+/* CONEXIÓN A LA BASE DE DATOS */
 try {
-    $conexion = new PDO("sqlsrv:server = tcp:dtb.database.windows.net,1433; Database = diariodb", "CloudSAcff10363", "Yeiker342461323");
+    $dsn = "mysql:host=$server_db;dbname=$base_db";
+    $conexion = new PDO($dsn, $usuario_db, $password_db);
     $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-    print ("Error connecting to SQL Server.");
-    die(print_r($e));
+    echo "Error de conexión: " . $e->getMessage();
 }
 ?>
